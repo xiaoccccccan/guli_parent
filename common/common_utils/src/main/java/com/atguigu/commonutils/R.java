@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.HashMap;
 import java.util.Map;
 
-//统一返回结果 的类
+//统一返回结果的类
 @Data
 public class R {
 
