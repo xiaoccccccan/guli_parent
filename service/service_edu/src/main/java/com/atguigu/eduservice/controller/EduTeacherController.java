@@ -29,8 +29,8 @@ import java.util.Map;
  */
 @Api(description = "讲师管理")//swagger提示注解，方便查看
 @RestController
-@RequestMapping("/eduservice/edu-teacher")
-@CrossOrigin
+@RequestMapping("/eduservice/teacher")
+@CrossOrigin //解决跨域
 public class EduTeacherController {
 
     @Autowired
@@ -142,6 +142,9 @@ public class EduTeacherController {
              //le 小于等于
             wapper.le("gmt_create",end);//参数表中字段和获取的值
         }
+
+        //排序
+        wapper.orderByDesc("gmt_create");
 
 
         //调用方法实现条件查询分页
