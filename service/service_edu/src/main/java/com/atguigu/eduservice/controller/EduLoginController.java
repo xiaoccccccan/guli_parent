@@ -1,8 +1,10 @@
 package com.atguigu.eduservice.controller;
 
 import com.atguigu.commonutils.R;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
+@Api(description = "登录")
 @RestController
 @RequestMapping("/eduserice/user")
 @CrossOrigin //解决跨域问题
